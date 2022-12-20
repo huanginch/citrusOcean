@@ -48,17 +48,12 @@
       (type "#98fb98")
       (link "#87ceeb")) ;;set variable ends here
 
-  ;; my custom face
-(defface delim-mismatch '((t :foreground, error))
-  "My custom delim mismatch face.")
-
 ;;rainbow-delimeter variables
 (custom-set-variables
  '(package-selected-packages '(rainbow-delimiters)))
 
 ;;custom face setting
 (custom-set-faces
- '(show-paren-mismatch ((t :inherit delim-mismatch)))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "keyword"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "link"))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "secondary"))))
