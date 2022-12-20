@@ -5,7 +5,7 @@ custom [Emacs](https://www.gnu.org/software/emacs/) theme - a theme base on blue
 1. Download the theme file and put it to your emacs.d directory.
 2. Download the [Mosterrat font file](https://fonts.google.com/specimen/Montserrat?query=Mon&preview.text=Mo&preview.text_type=custom) and install it.
 3. Download [ranbow-delimiters package](https://github.com/Fanael/rainbow-delimiters) from [Melpha](https://melpa.org/#/rainbow-delimiters) and enable it.
-   ![](https://imgur.com/a/EAnWPxL)
+![](https://imgur.com/qbfDxka)
 4. Execute the following commands in your emacs init file.
 ```elisp
 M-x load-theme RET
@@ -18,7 +18,7 @@ citrusOcean
 (add-hook 'after-init-hook (lambda () (load-theme 'citrusOcean)))
 ```
 ## Screenshots
-![screenshot](https://imgur.com/a/hJfzUJu)
+![screenshot](https://imgur.com/v5E3zdv)
 
 ## License
 [GPL3 License](./LICENSE)
