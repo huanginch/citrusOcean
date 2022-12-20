@@ -54,14 +54,14 @@
 
 ;;custom face setting
 (custom-set-faces
- '(rainbow-delimiters-depth-1-face ((t (:foreground "keyword"))))
- '(rainbow-delimiters-depth-2-face ((t (:foreground "link"))))
- '(rainbow-delimiters-depth-3-face ((t (:foreground "secondary"))))
- '(rainbow-delimiters-depth-4-face ((t (:foreground "primary"))))
- '(rainbow-delimiters-depth-5-face ((t (:foreground "gold3"))))
- '(rainbow-delimiters-depth-6-face ((t (:foreground "string"))))
- '(rainbow-delimiters-depth-7-face ((t (:foreground "orange"))))
- '(rainbow-delimiters-depth-8-face ((t (:foreground "primary")))) )
+ `(rainbow-delimiters-depth-1-face ((t (:foreground ,keyword))))
+ `(rainbow-delimiters-depth-2-face ((t (:foreground ,link))))
+ `(rainbow-delimiters-depth-3-face ((t (:foreground "gold3"))))
+ `(rainbow-delimiters-depth-4-face ((t (:foreground ,primary))))
+ `(rainbow-delimiters-depth-5-face ((t (:foreground ,light))))
+ `(rainbow-delimiters-depth-6-face ((t (:foreground ,string))))
+ `(rainbow-delimiters-depth-7-face ((t (:foreground "orange"))))
+ `(rainbow-delimiters-depth-8-face ((t (:foreground ,primary)))) )
 
    ;;;;Theme Faces
   (custom-theme-set-faces
@@ -69,12 +69,12 @@
 
    ;;default setting
    `(default ((t (
-                   :family ,font-default, font-arial, font-serif
+                   :family ,font-default ,font-arial ,font-serif
                    :width normal
                    :weight normal
                    :slant normal
                    :foreground ,primary
-                   :distant-foreground, light
+                   :distant-foreground ,light
                    :background ,background
                    :underline nil
                    :overline nil
@@ -84,14 +84,14 @@
                    :inherit nil ))))
 
    ;; base setting
-   `(cursor (( t (:background, light )) ))
+   `(cursor (( t (:background ,light )) ))
    `(show-paren-match ((t (:background "#191970")) ))
 
    ;;frame and window setting
-   `(fringe (( t (:background, shadow)) ))
+   `(fringe (( t (:background ,shadow)) ))
 
    ;;line number
-    `(line-number ((t (:foreground,  builtin))))
+    `(line-number ((t (:foreground ,builtin))))
     `(line-number-current-line ((t (:foreground, secondary ))))
 
    ;; font-lock setting
@@ -99,14 +99,14 @@
    `(font-lock-comment-face ((t (:foreground ,secondary ))))
    `(font-lock-string-face ((t (:foreground ,string ))))
    `(font-lock-keyword-face ((t (:foreground ,keyword ))))
-   `(font-lock-builtin-face ((t (:foreground, builtin))))
-   `(font-lock-function-name-face ((t (:foreground, fun-name))))
-   `(font-lock-type-face ((t (:foreground, type))))
+   `(font-lock-builtin-face ((t (:foreground ,builtin))))
+   `(font-lock-function-name-face ((t (:foreground ,fun-name))))
+   `(font-lock-type-face ((t (:foreground ,type))))
 
    ;;info
    `(success ((t (:foreground, "#66cdaa" :bold t)) ))
    `(warning ((t (:foreground, "#d2691e" ))))
-    `(error ((t (:foreground, high-contrast)) ))
+    `(error ((t (:foreground ,high-contrast)) ))
 
    ) ;; custom-theme-set-faces ends here
 
