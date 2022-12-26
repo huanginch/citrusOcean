@@ -31,9 +31,8 @@
   "A dark theme base on orange and blue")
 
 ;; set color and font variables
-(let ((font-default "Montserrat")
-      (font-arial "Arial")
-      (font-serif "sans-serif")
+(let (
+      (font-default "Montserrat")
       (primary "#6BC0EE")
       (secondary "#fff8dc")
       (string "#91F9E5")
@@ -69,7 +68,7 @@
 
    ;;default setting
    `(default ((t (
-                   :family ,font-default ,font-arial ,font-serif
+                   :family ,font-default
                    :width normal
                    :weight normal
                    :slant normal
@@ -81,7 +80,8 @@
                    :strike-through nil
                    :box nil
                    :inverse-video nil
-                   :inherit nil ))))
+                   :inherit nil ))
+	      ))
 
    ;; base setting
    `(cursor (( t (:background ,light )) ))
